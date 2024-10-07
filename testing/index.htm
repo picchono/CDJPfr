@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" media="all">
+    <script src=" https://cdn.jsdelivr.net/npm/tiny-slider@2.9.4/dist/min/tiny-slider.min.js "></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <!--[if (lt IE 9)]><script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.helper.ie8.js"></script><![endif]-->
+    <style>
+        .item {
+            background-color: indianred;
+            height: 300px;
+            padding: 50px;
+            border: 1px solid red;
+            border-radius: 20px;
+        }
+        .contain {
+            width: 500px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contain">
+        <div id="base">
+            <div class="item" aria-hidden="true" tabindex="-1">
+                <div class="img img-4">
+                    <a href="">3</a>
+                </div>
+                <p>
+                    Nisi inventore quo delectus perspiciatis voluptatibus, quae.
+                </p>
+            </div>
+            <div class="item" aria-hidden="true" tabindex="-1">
+                <div class="img img-5">
+                    <a href="">4</a>
+                </div>
+                <p>
+                    Nisi harum earum consectetur laudantium iusto, laboriosam.
+                </p>
+            </div>
+            <div class="item" aria-hidden="true" tabindex="-1">
+                <div class="img img-6">
+                    <a href="">5</a>
+                </div>
+                <p>
+                    Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.
+                </p>
+            </div>
+            <div class="item" aria-hidden="true" tabindex="-1">
+                <div class="img img-7">
+                    <a href="">6</a>
+                </div>
+                <p>
+                    Omnis dolorum eum blanditiis, ratione voluptates quod.
+                </p>
+            </div>
+            <div class="item" id="base-item0" aria-hidden="true" tabindex="-1">
+                <div class="img img-1">
+                    <a href="">0</a>
+                </div>
+                <p>
+                    Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
+                </p>
+            </div>
+            <div class="item" id="base-item1" aria-hidden="true" tabindex="-1">
+                <div class="img img-2">
+                    <a href="">1</a>
+                </div>
+                <p>
+                    Corrupti, libero minima nihil expedita officiis? Quo.
+                </p>
+            </div>
+            <div class="item" id="base-item2" aria-hidden="true" tabindex="-1">
+                <div class="img img-3">
+                    <a href="">2</a>
+                </div>
+                <p>
+                    Alias rem, ab impedit recusandae repellat tempore.
+                </p>
+            </div>
+            <div class="item" id="base-item3" aria-hidden="true" tabindex="-1">
+                <div class="img img-4">
+                    <a href="">3</a>
+                </div>
+                <p>
+                    Nisi inventore quo delectus perspiciatis voluptatibus, quae.
+                </p>
+            </div>
+            <div class="item" id="base-item4">
+                <div class="img img-5">
+                    <a href="">4</a>
+                </div>
+                <p>
+                    Nisi harum earum consectetur laudantium iusto, laboriosam.
+                </p>
+            </div>
+            <div class="item" id="base-item5">
+                <div class="img img-6">
+                    <a href="">5</a>
+                </div>
+                <p>
+                    Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.
+                </p>
+            </div>
+            <div class="item" id="base-item6">
+                <div class="img img-7">
+                    <a href="">6</a>
+                </div>
+                <p>
+                    Omnis dolorum eum blanditiis, ratione voluptates quod.
+                </p>
+            </div>
+            <div class="item" aria-hidden="true" tabindex="-1">
+                <div class="img img-1">
+                    <a href="">0</a>
+                </div>
+                <p>
+                    Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
+                </p>
+            </div>
+            <div class="item" aria-hidden="true" tabindex="-1">
+                <div class="img img-2">
+                    <a href="">1</a>
+                </div>
+                <p>
+                    Corrupti, libero minima nihil expedita officiis? Quo.
+                </p>
+            </div>
+            <div class="item" aria-hidden="true" tabindex="-1">
+                <div class="img img-3">
+                    <a href="">2</a>
+                </div>
+                <p>
+                    Alias rem, ab impedit recusandae repellat tempore.
+                </p>
+            </div>
+            <div class="item" aria-hidden="true" tabindex="-1">
+                <div class="img img-4">
+                    <a href="">3</a>
+                </div>
+                <p>
+                    Nisi inventore quo delectus perspiciatis voluptatibus, quae.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var slider = tns({
+            container: '#base',
+            center: true,
+            items: 3,
+            gutter: 20,
+            // loop: false,
+            slideBy: 'page',
+            mouseDrag: true,
+            layload: true,
+            speed: 400,
+            axis: "vertical"
+        });
+    </script>
+</body>
+
+</html>
