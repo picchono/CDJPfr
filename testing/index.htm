@@ -10,7 +10,7 @@
         .item {
             display: block;
             background-color: indianred;
-            height: 25%;
+            height: 500px;
             padding: 50px;
             border: 1px solid red;
             border-radius: 20px;
@@ -19,6 +19,14 @@
         .contain {
             width: 500px;
             margin: 50px auto;
+        }
+        .tns-nav {
+            text-align: center;
+            width: 100%;
+        }
+        .tns-nav button {
+            height: 12px;
+            margin: 20px 2px 0;
         }
     </style>
 </head>
@@ -98,14 +106,16 @@
         var slider = tns({
             container: '#base',
             center: true,
-            items: 3,
+            items: 1,
             gutter: 20,
             // loop: false,
             slideBy: 'page',
             mouseDrag: true,
             layload: true,
             speed: 400,
-            axis: "vertical"
+            axis: "vertical",
+            controls: false,
+            navPosition: "bottom"
         });
     </script>
 </body>
