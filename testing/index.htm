@@ -10,20 +10,22 @@
         .item {
             display: block;
             background-color: indianred;
-            height: 500px;
-            padding: 50px;
+            width: 80%;
+            padding: 10px;
             border: 1px solid red;
             border-radius: 20px;
         }
 
         .contain {
-            width: 500px;
+            width: 100px;
             margin: 50px auto;
         }
+
         .tns-nav {
             text-align: center;
             width: 100%;
         }
+
         .tns-nav button {
             height: 12px;
             margin: 20px 2px 0;
@@ -32,91 +34,189 @@
 </head>
 
 <body>
-    <div class="contain">
-        <div id="base">
-            <a href="#" class="item">
-                <div class="img">0</div>
-                <div>
-                    Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
+    <div id="nested_wrapper">
+        <div id="nested">
+            <div class="item">
+                <div id="nested_inner">
+                    <div class="item">
+                        <div>0</div>
+                        <div>Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!</div>
+                    </div>
+                    <div class="item">
+                        <div>1</div>
+                        <div>Corrupti, libero minima nihil expedita officiis? Quo.</div>
+                    </div>
+                    <div class="item">
+                        <div>2</div>
+                        <div>Alias rem, ab impedit recusandae repellat tempore.</div>
+                    </div>
+                    <div class="item">
+                        <div>3</div>
+                        <div>Nisi inventore quo delectus perspiciatis voluptatibus, quae.</div>
+                    </div>
+                    <div class="item">
+                        <div>4</div>
+                        <div>Nisi harum earum consectetur laudantium iusto, laboriosam.</div>
+                    </div>
+                    <div class="item">
+                        <div>5</div>
+                        <div>Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.</div>
+                    </div>
+                    <div class="item">
+                        <div>6</div>
+                        <div>Omnis dolorum eum blanditiis, ratione voluptates quod.</div>
+                    </div>
                 </div>
-            </a>
-            <a href="#" class="item">
-                <div class="img">1</div>
-                <div>
-                    Corrupti, libero minima nihil expedita officiis? Quo.
-                </div>
-            </a>
-            <a href="#" class="item">
-                <div class="img">2</div>
-                <div>
-                    Alias rem, ab impedit recusandae repellat tempore.
-                </div>
-            </a>
-            <a href="#" class="item">
-                <div class="img">3</div>
-                <div>
-                    Nisi inventore quo delectus perspiciatis voluptatibus, quae.
-                </div>
-            </a>
-            <a href="#" class="item">
-                <div class="img">4</div>
-                <div>
-                    Nisi harum earum consectetur laudantium iusto, laboriosam.
-                </div>
-            </a>
-            <a href="#" class="item">
-                <div class="img">5</div>
-                <div>
-                    Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.
-                </div>
-            </a>
-            <a href="#" class="item">
-                <div class="img">6</div>
-                <div>
-                    Omnis dolorum eum blanditiis, ratione voluptates quod.
-                </div>
-            </a>
-            <a href="#" class="item">
-                <div class="img">7</div>
-                <div>
-                    Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!
-                </div>
-            </a>
-            <a href="#" class="item">
-                <div class="img">8</div>
-                <div>
-                    Corrupti, libero minima nihil expedita officiis? Quo.
-                </div>
-            </a>
-            <a href="#" class="item">
-                <div class="img">9</div>
-                <div>
-                    Alias rem, ab impedit recusandae repellat tempore.
-                </div>
-            </a>
-            <a href="#" class="item">
-                <div class="img">10</div>
-                <div>
-                    Nisi inventore quo delectus perspiciatis voluptatibus, quae.
-                </div>
-            </a>
+            </div>
+            <div class="item">
+                <div>1</div>
+                <div>Corrupti, libero minima nihil expedita officiis? Quo.</div>
+            </div>
+            <div class="item">
+                <div>2</div>
+                <div>Alias rem, ab impedit recusandae repellat tempore.</div>
+            </div>
+            <div class="item">
+                <div>3</div>
+                <div>Nisi inventore quo delectus perspiciatis voluptatibus, quae.</div>
+            </div>
+            <div class="item">
+                <div>4</div>
+                <div>Nisi harum earum consectetur laudantium iusto, laboriosam.</div>
+            </div>
+            <div class="item">
+                <div>5</div>
+                <div>Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.</div>
+            </div>
+            <div class="item">
+                <div>6</div>
+                <div>Omnis dolorum eum blanditiis, ratione voluptates quod.</div>
+            </div>
         </div>
     </div>
-    <script>
-        var slider = tns({
-            container: '#base',
-            center: true,
-            items: 1,
-            gutter: 20,
-            // loop: false,
-            slideBy: 'page',
-            mouseDrag: true,
-            layload: true,
-            speed: 400,
-            axis: "vertical",
-            controls: false,
-            navPosition: "bottom"
-        });
+    <script type="module">
+        import { tns } from './tiny-slider.js';
+    
+        var options = {
+            'nested_inner': {
+                container: '',
+                items: 3,
+                nested: 'inner',
+                edgePadding: 20,
+                loop: false,
+                slideBy: 'page',
+                swipeAngle: false,
+                speed: 400,
+                controls: false
+            },
+            'nested': {
+                container: '',
+                items: 1,
+                loop: false,
+                nested: 'outer',
+                swipeAngle: false,
+                speed: 400,
+                controls: false
+            }
+        };
+
+        var doc = document,
+            slideList = doc.querySelectorAll('.slider-container > div'),
+            pageNavContainer = doc.querySelector('.nav'),
+            pageNav = doc.querySelector('.nav ul'),
+            toggleHandle = doc.querySelector('.nav-toggle-handle'),
+            divider = window.innerHeight / 2,
+            scrollTimer,
+            resizeTimer;
+
+        toggleHandle.onclick = function () {
+            var classN = pageNavContainer.className;
+            pageNavContainer.className = (classN.indexOf(' active') > 0) ? classN.replace(' active', '') : classN + ' active';
+        };
+
+        if (window.addEventListener) {
+            window.addEventListener('scroll', function () {
+                clearTimeout(scrollTimer);
+
+                scrollTimer = setTimeout(function () {
+                    [].forEach.call(slideList, function (el) {
+                        var rect = el.getBoundingClientRect(),
+                            navLink = pageNav.querySelector('[href="#' + el.id + '"]');
+                        if (rect.top <= divider && rect.bottom > divider) {
+                            if (navLink.className !== 'active') { navLink.className = 'active'; }
+                        } else {
+                            if (navLink.className !== '') { navLink.className = ''; }
+                        }
+                    });
+                }, 100);
+            });
+
+            window.addEventListener('resize', function () {
+                clearTimeout(resizeTimer);
+
+                resizeTimer = setTimeout(function () {
+                    divider = window.innerHeight / 2;
+                }, 100);
+            });
+
+            pageNav.addEventListener('click', function () {
+                var classN = pageNavContainer.className;
+                if (classN.indexOf(' active') > 0) { pageNavContainer.className = classN.replace(' active', ''); }
+            });
+        }
+
+        var mobile = 'false',
+            isTestPage = false,
+            isDemoPage = true,
+            classIn = 'jello',
+            classOut = 'rollOut',
+            speed = 400,
+            doc = document,
+            win = window,
+            ww = win.innerWidth || doc.documentElement.clientWidth || doc.body.clientWidth,
+            fw = getFW(ww),
+            initFns = {},
+            sliders = new Object(),
+            edgepadding = 50,
+            gutter = 10;
+
+        function getFW(width) {
+            var sm = 400, md = 900, lg = 1400;
+            return width < sm ? 150 : width >= sm && width < md ? 200 : width >= md && width < lg ? 300 : 400;
+        }
+        window.addEventListener('resize', function () { fw = getFW(ww); });
+
+
+        for (var i in options) {
+            var item = options[i];
+            item.container = '#' + i;
+            item.swipeAngle = false;
+            if (!item.speed) { item.speed = speed; }
+
+            if (doc.querySelector(item.container)) {
+                sliders[i] = tns(options[i]);
+
+                // call test functions
+                if (isTestPage && initFns[i]) { initFns[i](); }
+
+                // insert code
+                if (isDemoPage) {
+                    doc.querySelector('#' + i + '_wrapper').insertAdjacentHTML('beforeend', '<pre><code class="language-javascript">' + JSON.stringify(item, function (key, value) {
+                        if (typeof value === 'object') {
+                            if (value.id) {
+                                return "document.querySelector('#" + value.id + "')";
+                            }
+                        }
+                        return value;
+                    }, '  ') + '<\/code><\/pre>');
+                }
+
+                // test responsive pages
+            } else if (i.indexOf('responsive') >= 0) {
+                if (isTestPage && initFns[i]) { initFns[i](); }
+            }
+        }
+
     </script>
 </body>
 
