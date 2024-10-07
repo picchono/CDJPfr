@@ -33,7 +33,7 @@
 
 <body>
     <div id="nested_wrapper">
-        <div id="nested">
+        <div id="nested_outer">
             <div class="item">
                 <div id="nested_inner">
                     <div class="item">
@@ -92,30 +92,7 @@
             </div>
         </div>
     </div>
-    <script type="module">
-        import { tns } from './tiny-slider.js';
-    
-        var options = {
-            'nested_inner': {
-                container: '',
-                items: 3,
-                nested: 'inner',
-                edgePadding: 20,
-                loop: false,
-                slideBy: 'page',
-                swipeAngle: false,
-                speed: 400
-            },
-            'nested': {
-                container: '',
-                items: 1,
-                loop: false,
-                nested: 'outer',
-                swipeAngle: false,
-                speed: 400
-            }
-        };
-
+    <script>
         var doc = document,
             slideList = doc.querySelectorAll('.slider-container > div'),
             pageNavContainer = doc.querySelector('.nav'),
@@ -181,7 +158,31 @@
             return width < sm ? 150 : width >= sm && width < md ? 200 : width >= md && width < lg ? 300 : 400;
         }
         window.addEventListener('resize', function () { fw = getFW(ww); });
+    </script>
+    <script src="./tiny-slider.js"></script>
+    <script>
 
+        var options = {
+            'nested_outer': {
+                container: '',
+                items: 3,
+                nested: 'inner',
+                edgePadding: 20,
+                loop: false,
+                slideBy: 'page',
+                swipeAngle: false,
+                speed: 400
+            },
+            'nested_inner': {
+                container: '',
+                items: 1,
+                loop: false,
+                nested: 'outer',
+                slideBy: 'page',
+                swipeAngle: false,
+                speed: 400
+            }
+        };
 
         for (var i in options) {
             var item = options[i];
@@ -212,6 +213,19 @@
                 if (isTestPage && initFns[i]) { initFns[i](); }
             }
         }
+
+        // goto
+        if (doc.querySelector('#base_wrapper')) {
+            var goto = doc.querySelector('#base_wrapper .goto-controls'),
+                gotoBtn = goto.querySelector('.button'),
+                gotoInput = goto.querySelector('input');
+
+            gotoBtn.onclick = function (event) {
+                var index = gotoInput.value;
+                sliders['base'].goTo(index);
+            };
+        }
+
 
     </script>
 </body>
