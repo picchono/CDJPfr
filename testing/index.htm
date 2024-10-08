@@ -2,15 +2,14 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" media="all">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <style>
         .item {
             display: block;
-            background-color: indianred;
+            background-color: rgb(238, 228, 228);
             width: 80%;
             padding: 10px;
-            border: 1px solid red;
+            border: 1px solid rgb(255, 132, 0);
             border-radius: 20px;
         }
 
@@ -32,63 +31,79 @@
 </head>
 
 <body>
-    <div id="nested_wrapper">
-        <div id="nested_outer">
-            <div class="item">
-                <div id="nested_inner">
-                    <div class="item">
-                        <div>0</div>
-                        <div>Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!</div>
-                    </div>
-                    <div class="item">
-                        <div>1</div>
-                        <div>Corrupti, libero minima nihil expedita officiis? Quo.</div>
-                    </div>
-                    <div class="item">
-                        <div>2</div>
-                        <div>Alias rem, ab impedit recusandae repellat tempore.</div>
-                    </div>
-                    <div class="item">
-                        <div>3</div>
-                        <div>Nisi inventore quo delectus perspiciatis voluptatibus, quae.</div>
-                    </div>
-                    <div class="item">
-                        <div>4</div>
-                        <div>Nisi harum earum consectetur laudantium iusto, laboriosam.</div>
-                    </div>
-                    <div class="item">
-                        <div>5</div>
-                        <div>Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.</div>
-                    </div>
-                    <div class="item">
-                        <div>6</div>
-                        <div>Omnis dolorum eum blanditiis, ratione voluptates quod.</div>
+    <div class="slider-container">
+        <div id="nested_wrapper">
+            <div id="nested">
+                <div class="item">
+                    <div id="innested_wrapper">
+                        <div id="innested">
+                            <div class="item">
+                                <div>0</div>
+                                <div>Sunt dignissimos distinctio, veniam, tenetur aspernatur nulla!</div>
+                            </div>
+                            <div class="item">
+                                <div>1</div>
+                                <div>Corrupti, libero minima nihil expedita officiis? Quo.</div>
+                            </div>
+                            <div class="item">
+                                <div>2</div>
+                                <div>Alias rem, ab impedit recusandae repellat tempore.</div>
+                            </div>
+                            <div class="item">
+                                <div>3</div>
+                                <div>Nisi inventore quo delectus perspiciatis voluptatibus, quae.</div>
+                            </div>
+                            <div class="item">
+                                <div>4</div>
+                                <div>Nisi harum earum consectetur laudantium iusto, laboriosam.</div>
+                            </div>
+                            <div class="item">
+                                <div>5</div>
+                                <div>Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.</div>
+                            </div>
+                            <div class="item">
+                                <div>6</div>
+                                <div>Omnis dolorum eum blanditiis, ratione voluptates quod.</div>
+                            </div>
+                            <div class="item">
+                                <div>7</div>
+                                <div>Nisi harum earum consectetur laudantium iusto, laboriosam.</div>
+                            </div>
+                            <div class="item">
+                                <div>8</div>
+                                <div>Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.</div>
+                            </div>
+                            <div class="item">
+                                <div>9</div>
+                                <div>Omnis dolorum eum blanditiis, ratione voluptates quod.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="item">
-                <div>1</div>
-                <div>Corrupti, libero minima nihil expedita officiis? Quo.</div>
-            </div>
-            <div class="item">
-                <div>2</div>
-                <div>Alias rem, ab impedit recusandae repellat tempore.</div>
-            </div>
-            <div class="item">
-                <div>3</div>
-                <div>Nisi inventore quo delectus perspiciatis voluptatibus, quae.</div>
-            </div>
-            <div class="item">
-                <div>4</div>
-                <div>Nisi harum earum consectetur laudantium iusto, laboriosam.</div>
-            </div>
-            <div class="item">
-                <div>5</div>
-                <div>Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.</div>
-            </div>
-            <div class="item">
-                <div>6</div>
-                <div>Omnis dolorum eum blanditiis, ratione voluptates quod.</div>
+                <div class="item">
+                    <div>1</div>
+                    <div>Corrupti, libero minima nihil expedita officiis? Quo.</div>
+                </div>
+                <div class="item">
+                    <div>2</div>
+                    <div>Alias rem, ab impedit recusandae repellat tempore.</div>
+                </div>
+                <div class="item">
+                    <div>3</div>
+                    <div>Nisi inventore quo delectus perspiciatis voluptatibus, quae.</div>
+                </div>
+                <div class="item">
+                    <div>4</div>
+                    <div>Nisi harum earum consectetur laudantium iusto, laboriosam.</div>
+                </div>
+                <div class="item">
+                    <div>5</div>
+                    <div>Dolores blanditiis neque, quis vitae? Reprehenderit, aliquam.</div>
+                </div>
+                <div class="item">
+                    <div>6</div>
+                    <div>Omnis dolorum eum blanditiis, ratione voluptates quod.</div>
+                </div>
             </div>
         </div>
     </div>
@@ -101,6 +116,20 @@
             divider = window.innerHeight / 2,
             scrollTimer,
             resizeTimer;
+
+        var mobile = 'false',
+            isTestPage = false,
+            classIn = 'jello',
+            classOut = 'rollOut',
+            speed = 400,
+            doc = document,
+            win = window,
+            ww = win.innerWidth || doc.documentElement.clientWidth || doc.body.clientWidth,
+            fw = getFW(ww),
+            initFns = {},
+            sliders = new Object(),
+            edgepadding = 50,
+            gutter = 10;
 
         toggleHandle.onclick = function () {
             var classN = pageNavContainer.className;
@@ -138,20 +167,7 @@
             });
         }
 
-        var mobile = 'false',
-            isTestPage = false,
-            isDemoPage = true,
-            classIn = 'jello',
-            classOut = 'rollOut',
-            speed = 400,
-            doc = document,
-            win = window,
-            ww = win.innerWidth || doc.documentElement.clientWidth || doc.body.clientWidth,
-            fw = getFW(ww),
-            initFns = {},
-            sliders = new Object(),
-            edgepadding = 50,
-            gutter = 10;
+
 
         function getFW(width) {
             var sm = 400, md = 900, lg = 1400;
@@ -159,28 +175,38 @@
         }
         window.addEventListener('resize', function () { fw = getFW(ww); });
     </script>
-    <script src="./tiny-slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
     <script>
 
         var options = {
-            'nested_outer': {
-                container: '',
-                items: 3,
+            'innested': {
+                container: 'innested',
+                items: 5,
                 nested: 'inner',
                 edgePadding: 20,
                 loop: false,
                 slideBy: 'page',
                 swipeAngle: false,
-                speed: 400
+                mouseDrag: true,
+                speed: 400,
+                navPosition: 'bottom',
+                axis: 'vertical',
+                'lazyload': true,
+                'touch': true,
+                'controls': false
             },
-            'nested_inner': {
-                container: '',
-                items: 1,
+            'nested': {
+                container: 'nested',
+                items: 2,
                 loop: false,
                 nested: 'outer',
-                slideBy: 'page',
                 swipeAngle: false,
-                speed: 400
+                mouseDrag: true,
+                speed: 400,
+                navPosition: 'bottom',
+                'lazyload': true,
+                'touch': true,
+                'controls': false
             }
         };
 
@@ -196,19 +222,7 @@
                 // call test functions
                 if (isTestPage && initFns[i]) { initFns[i](); }
 
-                // insert code
-                if (isDemoPage) {
-                    doc.querySelector('#' + i + '_wrapper').insertAdjacentHTML('beforeend', '<pre><code class="language-javascript">' + JSON.stringify(item, function (key, value) {
-                        if (typeof value === 'object') {
-                            if (value.id) {
-                                return "document.querySelector('#" + value.id + "')";
-                            }
-                        }
-                        return value;
-                    }, '  ') + '<\/code><\/pre>');
-                }
-
-                // test responsive pages
+               // test responsive pages
             } else if (i.indexOf('responsive') >= 0) {
                 if (isTestPage && initFns[i]) { initFns[i](); }
             }
@@ -225,7 +239,6 @@
                 sliders['base'].goTo(index);
             };
         }
-
 
     </script>
 </body>
