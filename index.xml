@@ -251,7 +251,38 @@ La version actuelle est le CSS3.&lt;/p>
  &lt;div class="titleLink">Local app&lt;/div>
  &lt;div class="imgLink">&lt;img src="https://localwp.com/wp-content/uploads/2021/08/local-sharing.png" alt="Local app">&lt;/div>
 &lt;/a>
-&lt;p>Le logiciel Local permet d&amp;rsquo;installer et gérer automatiquement et localement une multitude de site wordpress.&lt;/p></description></item><item><title>TET007-M1 · Approche pratique du numérique et la recherche d'information</title><link>https://chaire-design.fr/teaching/tet007-m1-approche_pratique_du_numerique_et_la_recherche_d_information/</link><pubDate>Wed, 01 Sep 2021 16:27:15 +0200</pubDate><guid>https://chaire-design.fr/teaching/tet007-m1-approche_pratique_du_numerique_et_la_recherche_d_information/</guid><description>&lt;span class="font-bold text-epierrot">/ Objectifs pédagogiques /&lt;/span>
+&lt;p>Le logiciel Local permet d&amp;rsquo;installer et gérer automatiquement et localement une multitude de site wordpress.&lt;/p></description></item><item><title>USMC85 · HTML</title><link>https://chaire-design.fr/teaching/usmc85/html/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>https://chaire-design.fr/teaching/usmc85/html/</guid><description>&lt;h2 id="la-structure-du-html-les-balises">La structure du HTML: les balises&lt;/h2>
+&lt;a class="linkBox" href="https://www.w3schools.com/html/html_examples.asp">
+ &lt;div class="titleLink">HTML Examples&lt;/div>
+ &lt;div class="imgLink">&lt;img src="https://www.w3schools.com/images/w3schools_logo_436_2.png" alt="HTML Examples">&lt;/div>
+&lt;/a>
+&lt;a class="linkBox" href="https://facemweb.com/creation-site-internet/liste-balises-html">
+ &lt;div class="titleLink">Liste de toutes les balises HTML&lt;/div>
+ &lt;div class="imgLink">&lt;img src="https://facemweb.com/wp-content/uploads/2019/02/Image-facebook-balises-html.jpg" alt="Liste de toutes les balises HTML">&lt;/div>
+&lt;/a>
+&lt;a class="linkBox" href="https://jaetheme.com/balises-html5/">
+ &lt;div class="titleLink">Liste des balises HTML&lt;/div>
+ &lt;div class="imgLink">&lt;img src="https://jaetheme.com/wp-content/themes/paris/dist/img/liste-balises-html5.jpg" alt="Liste des balises HTML">&lt;/div>
+&lt;/a>
+&lt;p> &lt;/p>
+&lt;h3 id="le-document-html">Le document HTML&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-html" data-lang="html">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">&amp;lt;!DOCTYPE html&amp;gt;&lt;/span> 
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">html&lt;/span>&amp;gt;...&amp;lt;/&lt;span style="color:#f92672">html&lt;/span>&amp;gt; &lt;span style="color:#75715e">&amp;lt;!-- conteneur du html --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">head&lt;/span>&amp;gt;...&amp;lt;/&lt;span style="color:#f92672">head&lt;/span>&amp;gt; &lt;span style="color:#75715e">&amp;lt;!-- conteneur des méta-données --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">body&lt;/span>&amp;gt;...&amp;lt;/&lt;span style="color:#f92672">body&lt;/span>&amp;gt; &lt;span style="color:#75715e">&amp;lt;!-- conteneur du corps principal --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">header&lt;/span>&amp;gt;...&amp;lt;/&lt;span style="color:#f92672">header&lt;/span>&amp;gt; &lt;span style="color:#75715e">&amp;lt;!-- barre de titre --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">nav&lt;/span>&amp;gt;...&amp;lt;/&lt;span style="color:#f92672">nav&lt;/span>&amp;gt; &lt;span style="color:#75715e">&amp;lt;!-- menu --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">content&lt;/span>&amp;gt;...&amp;lt;/&lt;span style="color:#f92672">content&lt;/span>&amp;gt; &lt;span style="color:#75715e">&amp;lt;!-- contenu --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">article&lt;/span>&amp;gt;...&amp;lt;/&lt;span style="color:#f92672">article&lt;/span>&amp;gt; &lt;span style="color:#75715e">&amp;lt;!-- article (blog) --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">aside&lt;/span>&amp;gt;...&amp;lt;/&lt;span style="color:#f92672">aside&lt;/span>&amp;gt; &lt;span style="color:#75715e">&amp;lt;!-- partie latérale --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&amp;lt;&lt;span style="color:#f92672">footer&lt;/span>&amp;gt;...&amp;lt;/&lt;span style="color:#f92672">footer&lt;/span>&amp;gt; &lt;span style="color:#75715e">&amp;lt;!-- pied de page --&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p> &lt;/p></description></item><item><title>USMC85 · Presenting</title><link>https://chaire-design.fr/teaching/usmc85/presenting/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>https://chaire-design.fr/teaching/usmc85/presenting/</guid><description>&lt;p>Obsidian&lt;/p></description></item><item><title>USMC85 · Rhetoric</title><link>https://chaire-design.fr/teaching/usmc85/rhetoric/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>https://chaire-design.fr/teaching/usmc85/rhetoric/</guid><description>&lt;h2 id="css">CSS&lt;/h2>
+&lt;h3 id="css3">CSS3&lt;/h3>
+&lt;p>Le CSS (cascade style sheet) est un language transformant l&amp;rsquo;apparence d&amp;rsquo;une page écrite dans un language de balisage.
+La version actuelle est le CSS3.&lt;/p>
+&lt;p>Dans le cadre de ce cours, il va permettre de styliser nos pages HTML. Le code CSS peut se mettre soit entre les balises &amp;lt;style&amp;gt;&amp;hellip;&amp;lt;/style&amp;gt; elles-mêmes placées entre les balises &amp;lt;head&amp;gt;&amp;hellip;&amp;lt;/head&amp;gt;, soit dans un autre fichier (e.g., style.css) dont le fichier html doit appeler. C&amp;rsquo;est cette deuxième approche que nous utilisons.&lt;/p></description></item><item><title>USMC85 · Visualising</title><link>https://chaire-design.fr/teaching/usmc85/visualising/</link><pubDate>Fri, 01 Oct 2021 00:55:28 +0200</pubDate><guid>https://chaire-design.fr/teaching/usmc85/visualising/</guid><description/></item><item><title>TET007-M1 · Approche pratique du numérique et la recherche d'information</title><link>https://chaire-design.fr/teaching/tet007-m1-approche_pratique_du_numerique_et_la_recherche_d_information/</link><pubDate>Wed, 01 Sep 2021 16:27:15 +0200</pubDate><guid>https://chaire-design.fr/teaching/tet007-m1-approche_pratique_du_numerique_et_la_recherche_d_information/</guid><description>&lt;span class="font-bold text-epierrot">/ Objectifs pédagogiques /&lt;/span>
 &lt;ul>
 &lt;li>comprendre les bases du fonctionnement de l’internet,&lt;/li>
 &lt;li>connaître les bases de la programmation sur l’internet,&lt;/li>
